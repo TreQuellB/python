@@ -31,7 +31,9 @@ for i in range(2018,0,-4):
 
 
 lowNum =2
-highNum =22
-mult =4
-for i in range(lowNum,highNum,mult):
-    print(i)
+highNum =9
+mult =3
+for i in range(lowNum,highNum+1):
+    if(i%mult==0):
+        print(i)
+# trying to print 3 6 and 9  i=2 % mult=3 and it increases to 9 but does not print 9 so i add 1 to highnum and it becomes 10 which means i can print 9.
