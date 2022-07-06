@@ -29,8 +29,8 @@ students = [
     {'first_name' : 'Mark', 'last_name' : 'Guillen'},
     {'first_name' : 'KB', 'last_name' : 'Tonel'},
     ]
-for each_key in students:
-    print(each_key)
+for each_apple in students:
+    print(each_apple)
 
 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
@@ -54,12 +54,13 @@ iterateDictionary('last_name', students)
 
 
 def printInfo(some_dict):
-    print(len(some_dict['locations']),)
-    for location in some_dict['locations']:
-        print(location)
-    print(len(some_dict['instructors']),)
-    for location in some_dict['instructors']:
-        print(location)
+    for key in some_dict:
+        print(len(some_dict[key]),key.upper())
+        for item in some_dict[key]:
+            print(item)
+    # print(len(some_dict['instructors']),'')
+    # for location in some_dict['instructors']:
+    #     print(location)
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
