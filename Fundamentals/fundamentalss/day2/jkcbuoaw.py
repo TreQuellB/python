@@ -147,3 +147,195 @@ highNum=9
 mult=3
 for i in range(lowNum,highNum,mult):
     print(i)
+
+# set defaults when declaring the parameters
+def be_cheerful(name='', repeat=2):
+	print(f"good morning {name}\n" * repeat)
+be_cheerful()# output: good morning (repeated on 2 lines)
+be_cheerful("tim")# output: good morning tim (repeated on 2 lines)
+be_cheerful(name="john")# output: good morning john (repeated on 2 lines)
+be_cheerful(repeat=6)# output: good morning (repeated on 6 lines)
+be_cheerful(name="michael", repeat=5)# output: good morning michael (repeated on 5 lines)
+# NOTE: argument order doesn't matter if we are explicit when sending in our arguments!
+be_cheerful(repeat=3, name="kb")# output: good morning kb (repeated on 3 lines)
+# want to repeat  * 2 print and skip a line /or n/
+def meeting(name, repeat=2):
+    print(f"hey how ya doin{name}\n" * repeat)
+meeting("joe")
+
+def multiply(num_list,num):
+    print(num_list, num)
+    for x in num_list:
+        print(x)
+        x *= num
+    return num_list
+a = [2,4,10,16]
+b = multiply(a,5)
+print(b)
+# output:
+[2, 4, 10, 16] 
+2
+[2, 4, 10, 16]
+4
+[2, 4, 10, 16]
+10
+[2, 4, 10, 16]
+16
+[2, 4, 10, 16]
+[2, 4, 10, 16]
+
+#1
+def number_of_food_groups():
+    return 5
+print(number_of_food_groups())
+# =5
+def number_of_food_goupss():
+    return 1
+print(number_of_food_goupss())
+#will return 5
+#2
+def number_of_military_branches():
+    return 5
+print(number_of_days_in_a_week_silicon_or_triangle_sides() + number_of_military_branches())
+def num():
+    return 30000
+print(num() + num22222())
+#error other function not defined
+# number_of_days_in_a_week_silicon_or_triangle_sides() is not defined error
+#3
+def number_of_books_on_hold():
+    return 5
+    return 10
+print(number_of_books_on_hold())
+def num2():
+    return 21
+    return 322244444444444
+print(num2())
+#will print first return only =5
+# =5 only runs first return
+#4
+def number_of_fingers():
+    return 5
+    print(10)
+print(number_of_fingers())
+def num3():
+    return 3
+    print(23)
+    print(3333)
+print(num3())
+#reyurn will only print no other print method can work with return print and print would work
+#3
+# =10 & 5
+#5
+def number_of_great_lakes():
+    print(5)
+x = number_of_great_lakes()
+print(x)
+#print 5 but the the function does not have a parameter and x is invoking function that has nothing so the automatic response that prints in print for x is non
+# 5 x is empty no parameter for name in function
+
+#6
+def add(b,c):
+    print(b+c)
+    return b,c
+print(add(1,2) + add(2,3))
+#added return to return a array/list/tuples it prints 3 and 5 before unknown error didnt know why tho return got rid of it tho
+# a error but print 3 and 5
+
+#7
+def concatenate(b,c):
+    return str(b)+str(c)
+print(concatenate(2,5))
+#str turns numbers to strings so b="2"c="5"b+c="25"
+# na
+
+#8
+def number_of_oceans_or_fingers_or_continents():
+    b = 100
+    print(b)
+    if b < 10:
+        return 5
+    else:
+        return 10
+    return 7
+print(number_of_oceans_or_fingers_or_continents())
+#print 100 return 10 b=100 it is not less than 10
+# print 100 and return 10?
+#9
+def number_of_days_in_a_week_silicon_or_triangle_sides(b,c):
+    if b<c:
+        return 7
+    else:
+        return 14
+    return 3
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3))
+print(number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+
+# 7 and 14 and 21 3rd problem is using the condition problem getting the answer then adding the two answer for final result/print
+#10
+def addition(b,c):
+    return b+c
+    return 10
+print(addition(3,5))
+#prints 8 3 +5 return value show 8
+
+#11
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+print(b)
+foobar()
+print(b)
+# print 500 300 500 500
+#first one is 500 out of function in function 300 outside function 500 500 because of the variable outside the function b they take on the int 500
+#12
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+foobar()
+print(b)
+# 500 500 300 500
+
+#13
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+b=foobar()
+print(b)
+# 500 500 300 300
+
+#14
+def foo():
+    print(1)
+    bar()
+    print(2)
+def bar():
+    print(3)
+foo()
+# find the functions invoke and go in order top to bottom 1 3 2
+
+#15
+def foo():
+    print(1)
+    x = bar()
+    print(x)
+    return 10
+def bar():
+    print(3)
+    return 5
+y = foo()
+print(y)
+# 1  3 5 10
+
+
