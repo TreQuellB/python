@@ -1,0 +1,25 @@
+body{
+    width: 50vw;
+    height: 50vw;
+/* display: flex; */
+/* align-items:center; */
+/* justify-content: center; */
+margin: 0 auto;
+/* position: fixed; */
+}
+table{
+    width: 20vw;
+    height:20vw;
+    border:10px solid rgb(200, 255, 0);
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+}
+td{
+    border: 1px solid black;
+}
+.color1{
+background-color: red;
+}
+.color2{
+    background-color: black;
+}

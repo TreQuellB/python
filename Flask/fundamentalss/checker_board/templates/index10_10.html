@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HELLO CHECKKER BOARD</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style10_10.css') }}">
+    </head>
+    <body>
+            <h1>10 by 10</h1>
+        <table>
+            {%for i in range(10):%}
+            <tr class="row-1">
+                {%for j in range(10):%}
+                <td class="color{{(i+j)%2+1}}"></td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+        <!-- <table>
+            {%for i in range(8):%}
+            <tr class="row-1">
+                {%for j in range(4):%}
+                <td class="color{{(i+j)%2+1}}"></td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+            </table> -->
+    </body>
+</html>
+
+
+<!-- flask looks for a html file inside the templates folder  -->
+<!-- we connected the html file to the server.py file  with render_template. on line one after flask put a comma than render_template.-->
