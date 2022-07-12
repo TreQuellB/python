@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+    <!-- method is singurlar in the form -->
+    <form action="/processed" method="POST">
+        <div id="name_field">
+            <label>Name: </label>
+            <input type="text" name="name" id="input_fields">
+        </div>
+        <div id="inputs">
+            <label>Dojo Location</label>
+            <select name="location" id="input_fields">
+                <option value="San Jose">San Jose</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+        <option value="DC">Washington D.C.</option>
+        <option value="Tulsa">Tulsa</option>
+            </select>
+        </div>
+        <div id="inputs_1">
+            <label>Favorite Language</label>
+            <select name="language" id="input_fields">
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Swift">Swift</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+            </select>
+            <div>
+                <textarea name="comments"></textarea>
+            </div>
+        </div>
+            <div id="submit_button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+</body>
+</html>

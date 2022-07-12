@@ -103,7 +103,7 @@ student ={
     "dbz":"Ubb"
 }
 for key in student:
-    print(f"{key}yeah thats right{student[key]}")
+    print(f"{key}yeah thats right{student[key]}")#how to do string and add the parameter/variable in the arguement/value to target them or a function that can target them key is the first thing in a dict
     
 for apple in student:
     print(f"{apple} :{student[apple]}")
