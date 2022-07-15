@@ -1,0 +1,139 @@
+18:33:54	DROP DATABASE `dojo_and_ninjas`	2 row(s) affected	0.828 sec
+
+18:42:37	INSERT INTO dojos (name)  VALUES("the great kai dojo")	Error Code: 1046. No database selected Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.	0.063 sec
+
+18:43:07	INSERT INTO dojos (name)  VALUES("the great kai dojo")	1 row(s) affected	0.187 sec
+
+18:44:17	select * from dojos LIMIT 0, 1000	1 row(s) returned	0.031 sec / 0.000 sec
+
+18:46:16	insert INTO dojos (name) values ("time chamber")	1 row(s) affected	0.093 sec
+
+18:47:02	select * from dojos LIMIT 0, 1000	2 row(s) returned	0.000 sec / 0.000 sec
+
+18:47:13	INSERT INTO dojos (name)  VALUES("the great kai dojo")	1 row(s) affected	0.094 sec
+
+18:47:13	insert INTO dojos (name) values ("time chamber")	1 row(s) affected	0.046 sec
+
+18:47:13	select * from dojos LIMIT 0, 1000	4 row(s) returned	0.000 sec / 0.000 sec
+
+18:48:56	insert into dojos (name) values ("fury fist")	1 row(s) affected	0.110 sec
+
+18:49:05	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+18:57:35	delete FROM dojos where id=3	1 row(s) affected	0.078 sec
+
+18:58:12	delete FROM dojos where id=4	1 row(s) affected	0.078 sec
+
+18:58:36	select * from dojos LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+
+19:02:57	delete FROM dojos where id=2	1 row(s) affected	0.093 sec
+
+19:03:08	insert into dojos (name) values ("Goku")	1 row(s) affected	0.078 sec
+
+19:04:37	insert into dojos (name) values ("Vegeta")	1 row(s) affected	0.110 sec
+
+19:11:17	insert into dojos (name) values ("krillin")	1 row(s) affected	0.078 sec
+
+19:11:53	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+19:14:27	insert into ninjas (first_name,last_name,age,dojos_id) values ("Goku")	Error Code: 1136. Column count doesn't match value count at row 1	0.000 sec
+
+19:16:23	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+19:17:06	insert into ninjas (first_name,last_name,age,dojos_id) values ("Goku","kakarot",37,1)	1 row(s) affected	0.078 sec
+
+19:17:51	select * from ninjas LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+19:25:25	insert into ninjas (first_name,last_name,age,dojos_id) values ("Ichigo","Bleach",20,1)	1 row(s) affected	0.078 sec
+
+19:25:32	insert into ninjas (first_name,last_name,age,dojos_id) values ("buu","uub",1,1)	1 row(s) affected	0.078 sec
+
+19:25:46	select * from ninjas LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+
+19:28:45	insert into ninjas (first_name,last_name,age,dojos_id) values ("bastia","bomb",30,2)	Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`dojo_and_ninjas`.`ninjas`, CONSTRAINT `fk_ninjas_dojos` FOREIGN KEY (`dojos_id`) REFERENCES `dojos` (`id`))	0.063 sec
+
+19:30:00	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+19:30:47	insert into ninjas (first_name,last_name,age,dojos_id) values ("bastia","bomb",30,5)	1 row(s) affected	0.094 sec
+
+19:30:50	insert into ninjas (first_name,last_name,age,dojos_id) values ("ray","mysterio",25,5)	1 row(s) affected	0.078 sec
+
+19:30:54	insert into ninjas (first_name,last_name,age,dojos_id) values ("Big","Show",55,5)	1 row(s) affected	0.078 sec
+
+19:31:01	select * from ninjas LIMIT 0, 1000	6 row(s) returned	0.015 sec / 0.000 sec
+
+19:32:00	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+19:32:23	insert into ninjas (first_name,last_name,age,dojos_id) values ("bastia","bomb",30,6)	1 row(s) affected	0.094 sec
+
+19:32:26	insert into ninjas (first_name,last_name,age,dojos_id) values ("ray","mysterio",25,6)	1 row(s) affected	0.125 sec
+
+19:32:29	insert into ninjas (first_name,last_name,age,dojos_id) values ("Big","Show",55,6)	1 row(s) affected	0.062 sec
+
+19:32:36	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+19:34:04	delete FROM dojos where id=10	0 row(s) affected	0.000 sec
+
+19:34:08	delete FROM dojos where id=9	0 row(s) affected	0.000 sec
+
+19:34:11	delete FROM dojos where id=8	1 row(s) affected	0.078 sec
+
+19:34:16	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+19:34:42	select * from dojos LIMIT 0, 1000	4 row(s) returned	0.000 sec / 0.000 sec
+
+19:35:07	insert into dojos (name) values ("krillin")	1 row(s) affected	0.094 sec
+
+19:35:40	delete FROM ninjas where id=10	1 row(s) affected	0.094 sec
+
+19:35:43	delete FROM ninjas where id=9	1 row(s) affected	0.094 sec
+
+19:35:46	delete FROM ninjas where id=8	1 row(s) affected	0.109 sec
+
+19:35:55	select * from ninjas LIMIT 0, 1000	6 row(s) returned	0.000 sec / 0.000 sec
+
+19:37:36	insert into ninjas (first_name,last_name,age,dojos_id) values ("red","ranger",20,6)	1 row(s) affected	0.235 sec
+
+19:37:43	insert into ninjas (first_name,last_name,age,dojos_id) values ("blue","ranger",20,6)	1 row(s) affected	0.109 sec
+
+19:37:47	insert into ninjas (first_name,last_name,age,dojos_id) values ("green","ranger",20,6)	1 row(s) affected	0.094 sec
+
+19:37:52	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+19:45:43	select * from dojos where ninjas = "id" LIMIT 0, 1000	Error Code: 1054. Unknown column 'ninjas' in 'where clause'	0.015 sec
+
+19:50:01	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+19:50:33	select * from dojos LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
+
+19:56:09	select * from ninjas where dojos= "dojos_id" LIMIT 0, 1000	Error Code: 1054. Unknown column 'dojos' in 'where clause'	0.000 sec
+
+19:58:26	select * from ninjas where first_name= "Goku" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+19:59:54	select * from ninjas where first_name= "vegeta" LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+
+20:00:27	select * from ninjas where first_name= "Vegeta" LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+
+20:00:44	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+20:01:31	select * from ninjas where first_name= "Ichigo" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:01:41	select * from ninjas where first_name= "buu" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:03:08	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.000 sec / 0.000 sec
+
+20:04:13	select * from ninjas where last_name= "bomb" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:04:17	select * from ninjas where last_name= "mysterio" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:04:20	select * from ninjas where last_name= "Show" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:06:06	select * from ninjas LIMIT 0, 1000	9 row(s) returned	0.016 sec / 0.000 sec
+
+20:07:18	select * from ninjas where first_name= "red" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:07:26	select * from ninjas where last_name= "bomb" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:07:35	select * from ninjas where first_name= "blue" LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+20:07:38	select * from ninjas where first_name= "green" LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
