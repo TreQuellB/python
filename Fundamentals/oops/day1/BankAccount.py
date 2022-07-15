@@ -26,12 +26,12 @@ class BankAccount:
         
         return self
 
-mybank_account = BankAccount(5,100)  
+# mybank_account = BankAccount(5,100)  
 
-mybank_account.deposit(100).deposit(10000).deposit(2).withdraw(300).withdraw(400).deposit(1).display_account_info().yield_interest().display_account_info()
+# mybank_account.deposit(100).deposit(10000).deposit(2).withdraw(300).withdraw(400).deposit(1).display_account_info().yield_interest().display_account_info()
 
-mybank_account2 = BankAccount(2,100)  
-mybank_account2.deposit(50).deposit(0).withdraw(25).withdraw(1).withdraw(2).withdraw(1).display_account_info()
+# mybank_account2 = BankAccount(2,100)  
+# mybank_account2.deposit(50).deposit(0).withdraw(25).withdraw(1).withdraw(2).withdraw(1).display_account_info()
 
 
 class Person:
@@ -51,11 +51,11 @@ class Person:
         print(self.age)
         return self
 
-create = Person(33,"male","tre")#when you make a new person its a instance ex the.what() what is a class the random variable
-create.birthday().random()#
+# create = Person(33,"male","tre")#when you make a new person its a instance ex the.what() what is a class the random variable
+# create.birthday().random()#
 
-person2=Person(31,"female","jessica")
-person2.random()
+# person2=Person(31,"female","jessica")
+# person2.random()
 
-for i in [2,1,5]:
-    print(i)
+# for i in [2,1,5]:
+#     print(i)

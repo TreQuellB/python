@@ -1,29 +1,30 @@
-from BankAccount import BankAccount
+from BankAccount import BankAccount#this is importing bankaccount class to user
 
 
-class User:
-    def __init__(self, name,last_name, email, age):
+class User:#class is user
+    def __init__(self, name,last_name, email, age):#constructor is creating what a user looks like
         self.name = name
         self.last_name=last_name
         self.email = email
         self.age=age
-        self.account = BankAccount(int_rate=5,balance=100)
+        self.account = BankAccount(int_rate=5,balance=100)#this is creating a instance in bankaccount within the users class
+        
+        #METHODS OF THE CLASS
     def make_deposit(self,amount):
-        self.account.deposit(100)
         self.account.balance += amount
         print(self.account.balance)
-        return self
+        return self#REMEMBER TO RETURN SELF IF YOU WANT TO CHAIN AT THE END OF EACH METHOD
     def make_withdrawal(self,amount):
-        self.account.withdraw(100)
         if self.account.balance < amount:
-            self.balance -= 5
+            self.account.balance -= 5
             print( f"Insufficient funds: Charging a $5 fee")
-            return self
+        else:
+            self.account.balance -= amount
+        return self
     def display_user_balance(self):
         self.account.display_account_info()
         return self
+#creating a instance of a user and assigning to a object 
 user_tre=User("Trequell","Belle","tre@aol.com",25)
-user_tre.make_deposit(215)
-user_tre.display_user_balance()
-user_tre.make_withdrawal(104)
-user_tre.display_user_balance()
+#chaining the methods together
+user_tre.make_deposit(215).display_user_balance().make_withdrawal(404).display_user_balance()
