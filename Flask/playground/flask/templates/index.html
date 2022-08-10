@@ -1,56 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .wrapper{
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .box{
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
-    </style>
-    <title>Playground</title>
-</head>
-<body>
-    <div class="wrapper">
-        {% for i in range(0,num) %}
-        <div class="box" style="background-color:{{color}};"></div>
-        {% endfor %}
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>play ground</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="wrapper">
+            {% for i in range(0,num) %}
+            <!-- style targetting background color while using the variable/value color to change the background color when changed -->
+            <div class="box" style="background-color:{{color}};"></div> 
+            {% endfor %}
+        </div>
+    </body>
 </html>
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Blue Box</title>
-</head>
-<body>
-    <h1>Welcome!</h1>
-    <div id="blue">
-        <h2>{{name}}</h2>
-        <p>{{num}}</p>
-        {% for i in range(0,num):%}
-        <p>hello {{name}}</p>
-        {% endfor %}
-    </div>
-</body>
-</html> -->
