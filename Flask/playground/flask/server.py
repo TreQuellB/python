@@ -19,17 +19,3 @@ def level_three(num, color):
 
 if __name__=="__main__":
     app.run(debug=True)
-
-# from flask import Flask, render_template
-# app=Flask(__name__)
-
-# @app.route("/")
-# def play_():
-#     return render_template("index.html")
-
-# @app.route("/play/<string:name>/<int:num>")
-# def play_(name,num):
-#     return render_template("index.html",name=name,num=num)
-
-# if __name__=="__main__":
-#     app.run(debug=True)
